@@ -1,12 +1,7 @@
-import React, { Fragment }from 'react';
-import Fill from '../../components/Fill.jsx'
+import React, { Fragment } from "react";
 
 const Index = () => {
-  return ( 
-    <Fragment>
-      <Fill />
-    </Fragment>
-   );
-}
- 
+  return <Fragment></Fragment>;
+};
+
 export default Index;
