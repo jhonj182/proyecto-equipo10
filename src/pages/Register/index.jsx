@@ -1,7 +1,7 @@
 import React, { Fragment }from 'react';
-import RegistrarVehiculo from '../components/RegistrarVehiculo'
+import RegistrarVehiculo from '../../components/RegistrarVehiculo.jsx'
 
-const Regv = () => {
+const Index = () => {
   return ( 
     <Fragment>
       <RegistrarVehiculo />
@@ -9,4 +9,4 @@ const Regv = () => {
    );
 }
  
-export default Regv;
+export default Index;

@@ -50,3 +50,47 @@ height: 100vh;
 height: 30px;
 font-size: x-small !important;
 }
+
+#Barra{
+
+  background-color: #c4c4c4;
+
+}
+
+#letra{
+
+  text-align: center;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+
+}
+
+
+.row>.col{
+
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(39,41,43,0.1);
+  text-align: center;
+
+}
+
+.logo{
+  width:  86px;
+  height: 65px;
+}
+
+.table{
+
+  text-align: center;
+
+}
+
+#btns{
+
+  display: inline;
+
+}
+
+

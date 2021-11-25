@@ -1,6 +1,6 @@
 import React, { useEffect, useState, Fragment }from 'react';
 import axios from 'axios';
-import Table from '../components/Table';
+import Table from '../../components/Table';
 const VerVehiculos = (props) => {
   const URL = 'http://localhost:3000/usuarios';
   const [usuarios, setUsuarios] = useState();
