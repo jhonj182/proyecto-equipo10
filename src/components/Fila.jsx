@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Fila = (vehiculos, index) => {
-  const { marca, placa } = vehiculos;
-  return ( 
-    <tr>
+const Fila = (vehiculo, index) => {
+  const { marca } = vehiculo;
+  return (
+    <tr key={index}>
     <th scope="row">{index}</th>
         <td>{marca}</td>
-        <td>{placa}</td>
+        <td>placa</td>
         <td>na</td>
         <td class="text-center">
           <a  href="tanquear/{placa}" class="btn btn-success btm-h">Tanquear</a >
@@ -16,5 +16,5 @@ const Fila = (vehiculos, index) => {
     </tr>
    );
 }
- 
+
 export default Fila;

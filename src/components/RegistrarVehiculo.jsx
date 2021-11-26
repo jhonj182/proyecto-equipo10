@@ -29,27 +29,10 @@ const Table = () => {
                 <label htmlFor="inputState" className="form-label">
                   Marca del Vehículo
                 </label>
-                <select id="inputState" className="form-select">
-                  <option selected>Seleccione</option>
-                  <option value="Audi">Audi</option>
-                  <option value="BMW">BMW</option>
-                  <option value="Chevrolet">Chevrolet</option>
-                  <option value="Citroën">Citroën</option>
-                  <option value="Ford">Ford</option>
-                  <option value="Foton">Foton</option>
-                  <option value="Hyundai">Hyundai</option>
-                  <option value="JAC">JAC</option>
-                  <option value="Kia">Kia</option>
-                  <option value="Mazda">Mazda</option>
-                  <option value="Mercedes-Benz">Mercedes-Benz</option>
-                  <option value="Renault">Renault</option>
-                  <option value="Subaru">Subaru</option>
-                  <option value="Suzuki">Suzuki</option>
-                  <option value="Subaru">Subaru</option>
-                  <option value="Toyota">Toyota</option>
-                  <option value="Volkswagen">Volkswagen</option>
-                  <option value="Otra Marca">Otra Marca</option>
-                </select>
+                <input
+                  className="form-control js-name"
+                  type="text"
+                />
               </div>
               <div className="col-sm-12">
                 <label htmlFor="modelo" className="form-label">
@@ -73,7 +56,7 @@ const Table = () => {
                   />
                   <label className="form-check-label" htmlFor="gridCheck">
                     He leido y acepto los{" "}
-                    <a href="#" className="terminos link-light">
+                    <a href="/" className="terminos link-light">
                       Términos y Condiciones de Registro de Vehículos
                     </a>
                   </label>

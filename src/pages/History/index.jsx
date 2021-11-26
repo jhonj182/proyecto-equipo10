@@ -1,16 +1,16 @@
 import React from 'react';
-const Index = () => {
-  function saludar(){
-    alert('hola mundo');
-  }
-  return ( 
+import { getVehiculo } from "../../config/db";
+
+const Index = ({transacciones}) => {
+
+  return (
     <div>
-  <section className="container-fluid contenedor ">
+  <section className="container-fluid contenedor px-5">
         <div className="h-1000 ">
-          <div className="col-lg-8 table-responsive-lg center-form d-flex flex-column align-items-center justify-content-center">
-            <h1 className="mt-5 mb-5 
+          <div className="col-lg-12 col-sm-12  d-flex flex-column align-items-center justify-content-center">
+            <h1 className="mt-5 mb-5
         text-light">Transacciones</h1>
-            <table className="table-light table table-striped  table-hover">
+            <table className="table-light px-2 table table-responsive table-striped table-hover">
               <thead>
                 <tr className="text-center">
                   <th scope="col">Fecha</th>
@@ -22,22 +22,22 @@ const Index = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr className="text-center">
-                  <td>22-10-2021</td>
-                  <td>$50.000</td>
-                  <td>FRE-456</td>
-                  <td>45</td>
-                  <td>8</td>
-                  <td>Saldo</td>
-                </tr>
-                <tr className="text-center" onClick={saludar}>
-                  <td>22-11-2021</td>
-                  <td>$60.000</td>
-                  <td>HJQ-456</td>
-                  <td>92</td>
-                  <td>90</td>
-                  <td>Pago con puntos</td>
-                </tr>
+              {console.log(transacciones)}
+              {!transacciones ?  '' : transacciones.map( (transaccion, index)=> {
+                    let placas = (getVehiculo(transaccion.vehiculoId))[0].placa;
+                    console.log(placas)
+                    return (
+                      <tr key={index}>
+                        <th className="px-2" scope="row">{transaccion.fecha}</th>
+                        <td className="px-2">{transaccion.monto}</td>
+                        <td className="px-2">{placas}</td>
+                        <td className="px-2">{transaccion.puntosObtenidos}</td>
+                        <td className="px-2">{transaccion.puntosRedimidos}</td>
+                        <td className="px-2">{transaccion.tipo}</td>
+                      </tr>
+                    );
+                  })
+                }
               </tbody>
             </table>
           </div>
@@ -47,5 +47,5 @@ const Index = () => {
 
     );
 }
- 
+
 export default Index;
