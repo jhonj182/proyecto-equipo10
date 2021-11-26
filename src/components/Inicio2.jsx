@@ -4,7 +4,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Inicio from './components/Inicio'
 
-
 function Inicio2() {
   return (
     <Router>
