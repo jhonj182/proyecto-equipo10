@@ -1,28 +1,47 @@
 import "./App.css";
-import React from "react";
+import React, { useEffect, useState, Component } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home/";
 import History from "./pages/History/";
 import RegisterCar from "./pages/Register/";
 import VerVehiculos from "./pages/CarList";
 import Fill from "./pages/Charge";
-import UserList from './pages/Users'
-import AdminList from './pages/Admin'
-import { getData } from "./config/db";
+import UserList from './pages/Users';
+import AdminList from './pages/Admin';
+import clienteAxios from './config/axios';
+import Cookies from 'universal-cookie';
 
-function App() {
-  let data = getData();
-  let user = 9;
-  let vehiculos = data.vehiculos;
-  let transacciones = data.transacciones;
-  let vehiculo = vehiculos.filter( (obj) => obj.userId === user );
-  let transaccion = transacciones.filter( (obj) => obj.userId === user );
+const App = () => {
+  const cookies = new Cookies();
+  const [transaccion, getTransacciones] = useState([]);
+  const [vehiculos, getVehiculos] = useState([]);
+
+  useEffect( () => {
+    const consultarApi = () => {
+      clienteAxios.get('/transacciones?userId=8')
+        .then(respuesta =>{
+          getTransacciones(respuesta.data);
+        })
+        .catch(error => {
+          console.log(error)
+        });
+      clienteAxios.get('/vehiculos?userId=8')
+        .then(respuesta =>{
+          getVehiculos(respuesta.data);
+        })
+        .catch(error => {
+          console.log(error)
+        });
+    }
+    consultarApi();
+  }, [] );
+
   return (
     <Router>
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="register-car" element={<RegisterCar />} />
-        <Route exact path="car-list" element={<VerVehiculos vehiculos={vehiculo}/>}/>
+        <Route exact path="car-list" element={<VerVehiculos vehiculos={vehiculos}/>}/>
         <Route exact path="edit-profile" element={<editarPerfil />} />
         <Route exact path="charge-account" element={<Fill />} />
         <Route exact path="reload-car/:id" element={<Fill />} />
