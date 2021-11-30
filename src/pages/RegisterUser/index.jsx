@@ -1,12 +1,12 @@
 import React, { Fragment }from 'react';
-import RegistrarVehiculo from '../../components/RegistrarUsuario.jsx'
+import RegistrarUsuario from '../../components/RegistrarUsuario.jsx'
 
 const Index = () => {
   return ( 
     <Fragment>
-      <RegistrarVehiculo />
+      <RegistrarUsuario />
     </Fragment>
-   );
+  );
 }
- 
+
 export default Index;

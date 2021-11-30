@@ -12,7 +12,7 @@ if(!cookies.get('username')){
   }
 ReactDOM.render(
   <React.StrictMode>
-    {cookies.get('username')? '' :  <Head />}
+    {!cookies.get('username')? '' :  <Head />}
     <App />
   </React.StrictMode>,
   document.getElementById('root')

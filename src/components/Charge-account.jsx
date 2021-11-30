@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Fill = () => {
+  console.log('hola mundo')
   return (
     <section className="container-fluid contenedor w-60 h-1000">
       <div className="col-lg-6 center-form center pb-5">
@@ -31,7 +32,7 @@ const Fill = () => {
       </div>
   </section>
 
-   );
+  );
 }
 
 export default Fill;

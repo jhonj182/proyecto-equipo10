@@ -8,14 +8,15 @@ import VerVehiculos from "./pages/CarList";
 import Fill from "./pages/Charge";
 import UserList from './pages/Users';
 import AdminList from './pages/Admin';
+import EditUser from './pages/EditUser';
+import RegisterUser from './pages/RegisterUser';
 import clienteAxios from './config/axios';
 import Cookies from 'universal-cookie';
 
-const App = () => {
+const App = ( props ) => {
   const cookies = new Cookies();
   const [transaccion, getTransacciones] = useState([]);
   const [vehiculos, getVehiculos] = useState([]);
-
   useEffect( () => {
     const consultarApi = () => {
       clienteAxios.get('/transacciones?userId=8')
@@ -41,8 +42,9 @@ const App = () => {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="register-car" element={<RegisterCar />} />
+        <Route exact path="register" element={<RegisterUser />} />
         <Route exact path="car-list" element={<VerVehiculos vehiculos={vehiculos}/>}/>
-        <Route exact path="edit-profile" element={<editarPerfil />} />
+        <Route exact path="edit-profile" element={<EditUser />} />
         <Route exact path="charge-account" element={<Fill />} />
         <Route exact path="reload-car/:id" element={<Fill />} />
         <Route exact path="transaction-history" element={<History transacciones ={transaccion} />} />
