@@ -3,15 +3,17 @@ import { Link } from 'react-router-dom';
 import clienteAxios from '../config/axios'
 
 const Table = (props) => {
+  const idUsuario = (props.vehiculos.user.id)
   // const {user} = props.user;
   // var vehiculos
   const [vehiculos, setVehiculos] = useState({});
   var datas
   const vehiculo  = () => {
     // event.preventDefault();
-    clienteAxios.get('/vehiculos')
+    clienteAxios.get('/vehiculos', {params: { idUsuario: idUsuario } })
     .then(response => {
       datas = response.data
+      console.log(datas)
       setVehiculos(datas);
     })
     .catch(error =>{
