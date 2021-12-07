@@ -1,11 +1,11 @@
 import React, { Fragment }from 'react';
 import Table from '../../components/Table';
 
-const VerVehiculos = ({vehiculos}) => {
+const VerVehiculos = (props) => {
 
   return (
     <Fragment>
-      <Table vehiculos = {vehiculos} />
+      <Table vehiculos = {props} />
     </Fragment>
    );
 }

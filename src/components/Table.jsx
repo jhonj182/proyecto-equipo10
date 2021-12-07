@@ -1,9 +1,27 @@
-import React, { Fragment }from 'react';
+import React, { Fragment, useState, useEffect }from 'react';
 import { Link } from 'react-router-dom';
+import clienteAxios from '../config/axios'
 
 const Table = (props) => {
-  const {vehiculos} = props;
-  console.log(vehiculos);
+  // const {user} = props.user;
+  // var vehiculos
+  const [vehiculos, setVehiculos] = useState({});
+  var datas
+  const vehiculo  = () => {
+    // event.preventDefault();
+    clienteAxios.get('/vehiculos')
+    .then(response => {
+      datas = response.data
+      setVehiculos(datas);
+    })
+    .catch(error =>{
+      console.log(error);
+    })
+  }
+  useEffect(() => { 
+    console.log(vehiculos)
+    vehiculo() }, []);
+  
   return (
     <Fragment>
       <section className="container-fluid contenedor ">
@@ -21,7 +39,7 @@ const Table = (props) => {
                   <th scope="col">Acción</th>
                 </tr>
               </thead>
-              <tbody>
+               <tbody>
                 {!vehiculos ?  '' :
                   vehiculos.map( (vehiculo, index)=> {
                     return (

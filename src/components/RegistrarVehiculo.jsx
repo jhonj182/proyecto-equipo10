@@ -1,6 +1,49 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
+import clienteAxios from '../config/axios';
 
-const Table = () => {
+const Table = ( props ) => {
+  const {user} = props.user;
+  console.log(user.id)
+  const [vehiculo, saveVehiculo] = useState({
+    id: 0,
+    marca: '',
+    placa: '',
+    modelo: 0,
+    idUsuario: 0
+  });
+  const actualizarState = event =>{
+    saveVehiculo({
+      ...vehiculo,
+      [event.target.name]: event.target.value 
+    })
+    console.log(vehiculo);
+  }
+  const getIdVehiculo = () => {
+    clienteAxios.get('/vehiculos')
+    .then(response => {
+      console.log(response.data.length)
+    })
+    .catch(error =>{
+      console.log(error);
+      alert("error vehiculo no registrado con éxito ");
+    })
+  }
+  
+  const registrarVehiculo = (event)=>{
+    event.preventDefault();
+    let idNuevo = getIdVehiculo()+1;
+    clienteAxios.post('/vehiculos', { id: idNuevo, marca: vehiculo.marca, modelo: vehiculo.modelo, placa: vehiculo.placa, idUsuario: user.id })
+    .then(response => {
+      console.log(response)
+      alert("vehiculo registrado con éxito ");
+      window.location = '/car-list';
+    })
+    .catch(error =>{
+      console.log(error);
+      alert("error vehiculo no registrado con éxito ");
+    })
+  }
+
   return (
     <Fragment>
       <section className="container-fluid contenedor ">
@@ -11,7 +54,9 @@ const Table = () => {
             >
               Registro de Vehículo
             </h1>
-            <form className="row g-3 text-light">
+            <form 
+            onSubmit={registrarVehiculo}
+            className="row g-3 text-light">
               <div className="col-sm-12">
                 <label htmlFor="name" className="form-label">
                   Placa
@@ -23,6 +68,7 @@ const Table = () => {
                   name="name"
                   placeholder="AAA000"
                   style={{ textTransform: "uppercase" }}
+                  onKeyUp = {actualizarState}
                 />
               </div>
               <div className="col-sm-12">
@@ -32,6 +78,8 @@ const Table = () => {
                 <input
                   className="form-control js-name"
                   type="text"
+                  name ="marca"
+                  onKeyUp = {actualizarState}
                 />
               </div>
               <div className="col-sm-12">
@@ -45,6 +93,7 @@ const Table = () => {
                   max={2099}
                   step={1}
                   defaultValue={2021}
+                  name = 'modelo'
                 />
               </div>
               <div className="col-12">

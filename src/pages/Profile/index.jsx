@@ -1,7 +1,14 @@
 import React from 'react';
 
-const Profile = () => {
-  return ( <p>Desde Perfil Principal</p> );
+const Index = (props) => {
+  const {user} = props;
+  const {avatar} = user;
+  return ( 
+    <>
+      <img src={avatar} alt="avatar" />
+       <p>Desde Perfil Principal</p> 
+    </>
+  );
 }
 
-export default Profile;
+export default Index;

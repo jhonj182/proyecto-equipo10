@@ -52,6 +52,7 @@ const AppRouter = ( props ) => {
         <PrivateRoute exact path="/register" component={RegisterUser} />
         <PrivateRoute exact path="/car-list" component={VerVehiculos}/> 
         <PrivateRoute exact path="/edit-profile" component={EditUser} />
+        <PrivateRoute exact path="/profile" component={Profile } />
         <PrivateRoute exact path="/charge-account" component={Fill} />
         <PrivateRoute exact path="/reload-car/:id" component={Fill} />
         <PrivateRoute exact path="/transaction-history" component={History} />

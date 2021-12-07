@@ -1,10 +1,10 @@
 import React, { Fragment }from 'react';
 import RegistrarVehiculo from '../../components/RegistrarVehiculo.jsx'
 
-const Index = () => {
+const Index = ( props ) => {
   return ( 
     <Fragment>
-      <RegistrarVehiculo />
+      <RegistrarVehiculo user = {props} />
     </Fragment>
    );
 }

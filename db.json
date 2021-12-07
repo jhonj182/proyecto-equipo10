@@ -1,16 +1,17 @@
 {
-    "users":[
+  "users": [
     {
       "id": 1,
       "nombres": "Rania",
       "apellidos": "Kirman",
-      "usuario": "rkirman0@friendfeed.com",
+      "usuario": "admin@admin.com",
       "documento": "3229501982",
       "celular": "687-276-4092",
       "password": "e10adc3949ba59abbe56e057f20f883e",
       "rol": "administrador",
       "avatar": "https://robohash.org/veritatislaboriosamsimilique.png?size=50x50&set=set1"
-    }, {
+    },
+    {
       "id": 2,
       "nombres": "Martino",
       "apellidos": "Phebey",
@@ -20,7 +21,8 @@
       "password": "e10adc3949ba59abbe56e057f20f883e",
       "rol": "empleado",
       "avatar": "https://robohash.org/magnidolorempossimus.png?size=50x50&set=set1"
-    }, {
+    },
+    {
       "id": 3,
       "nombres": "Daisie",
       "apellidos": "Martinek",
@@ -30,17 +32,19 @@
       "password": "e10adc3949ba59abbe56e057f20f883e",
       "rol": "empleado",
       "avatar": "https://robohash.org/saepequiillo.png?size=50x50&set=set1"
-    }, {
+    },
+    {
       "id": 4,
       "nombres": "Katharine",
       "apellidos": "Josham",
-      "usuario": "kjosham3@samsung.com",
+      "usuario": "user@user.com",
       "documento": "7024549919",
       "celular": "984-965-8077",
       "password": "e10adc3949ba59abbe56e057f20f883e",
       "rol": "usuario",
       "avatar": "https://robohash.org/adquaeeum.png?size=50x50&set=set1"
-    }, {
+    },
+    {
       "id": 5,
       "nombres": "Flin",
       "apellidos": "Prujean",
@@ -50,7 +54,8 @@
       "password": "e10adc3949ba59abbe56e057f20f883e",
       "rol": "usuario",
       "avatar": "https://robohash.org/adelectusquaerat.png?size=50x50&set=set1"
-    }, {
+    },
+    {
       "id": 6,
       "nombres": "Clemens",
       "apellidos": "Davidson",
@@ -60,7 +65,8 @@
       "password": "e10adc3949ba59abbe56e057f20f883e",
       "rol": "empleado",
       "avatar": "https://robohash.org/voluptasanimidolorem.png?size=50x50&set=set1"
-    }, {
+    },
+    {
       "id": 7,
       "nombres": "Archibald",
       "apellidos": "Clunie",
@@ -70,7 +76,8 @@
       "password": "e10adc3949ba59abbe56e057f20f883e",
       "rol": "administrador",
       "avatar": "https://robohash.org/doloremrepellathic.png?size=50x50&set=set1"
-    }, {
+    },
+    {
       "id": 8,
       "nombres": "Rhetta",
       "apellidos": "Polsin",
@@ -80,7 +87,8 @@
       "password": "e10adc3949ba59abbe56e057f20f883e",
       "rol": "usuario",
       "avatar": "https://robohash.org/sedeaquearchitecto.png?size=50x50&set=set1"
-    }, {
+    },
+    {
       "id": 9,
       "nombres": "Aurie",
       "apellidos": "Elcoux",
@@ -90,7 +98,8 @@
       "password": "e10adc3949ba59abbe56e057f20f883e",
       "rol": "empleado",
       "avatar": "https://robohash.org/remquaeratamet.png?size=50x50&set=set1"
-    }, {
+    },
+    {
       "id": 10,
       "nombres": "Rudie",
       "apellidos": "Menichini",
@@ -100,710 +109,931 @@
       "password": "e10adc3949ba59abbe56e057f20f883e",
       "rol": "administrador",
       "avatar": "https://robohash.org/adquisquameum.png?size=50x50&set=set1"
-    }],
-    "vehiculos":[
+    }
+  ],
+  "vehiculos": [
     {
-        "id": 1,
-        "marca": "Ford",
-        "modelo": 1998,
-        "idUsuario": 3
-      }, {
-        "id": 2,
-        "marca": "Mitsubishi",
-        "modelo": 1992,
-        "idUsuario": 2
-      }, {
-        "id": 3,
-        "marca": "Hyundai",
-        "modelo": 2007,
-        "idUsuario": 8
-      }, {
-        "id": 4,
-        "marca": "Buick",
-        "modelo": 1995,
-        "idUsuario": 1
-      }, {
-        "id": 5,
-        "marca": "Chevrolet",
-        "modelo": 2007,
-        "idUsuario": 3
-      }, {
-        "id": 6,
-        "marca": "Lexus",
-        "modelo": 2005,
-        "idUsuario": 8
-      }, {
-        "id": 7,
-        "marca": "Honda",
-        "modelo": 1990,
-        "idUsuario": 5
-      }, {
-        "id": 8,
-        "marca": "Ford",
-        "modelo": 1992,
-        "idUsuario": 2
-      }, {
-        "id": 9,
-        "marca": "GMC",
-        "modelo": 1994,
-        "idUsuario": 7
-      }, {
-        "id": 10,
-        "marca": "Infiniti",
-        "modelo": 1998,
-        "idUsuario": 7
-      }, {
-        "id": 11,
-        "marca": "Audi",
-        "modelo": 1996,
-        "idUsuario": 10
-      }, {
-        "id": 12,
-        "marca": "Toyota",
-        "modelo": 2006,
-        "idUsuario": 5
-      }, {
-        "id": 13,
-        "marca": "Ford",
-        "modelo": 1987,
-        "idUsuario": 8
-      }, {
-        "id": 14,
-        "marca": "Saturn",
-        "modelo": 2005,
-        "idUsuario": 6
-      }, {
-        "id": 15,
-        "marca": "Ford",
-        "modelo": 1992,
-        "idUsuario": 10
-      }, {
-        "id": 16,
-        "marca": "Hyundai",
-        "modelo": 2009,
-        "idUsuario": 3
-      }, {
-        "id": 17,
-        "marca": "Oldsmobile",
-        "modelo": 1993,
-        "idUsuario": 9
-      }, {
-        "id": 18,
-        "marca": "Chrysler",
-        "modelo": 2001,
-        "idUsuario": 10
-      }, {
-        "id": 19,
-        "marca": "Ford",
-        "modelo": 2006,
-        "idUsuario": 9
-      }, {
-        "id": 20,
-        "marca": "Volvo",
-        "modelo": 2009,
-        "idUsuario": 8
-      }, {
-        "id": 21,
-        "marca": "Porsche",
-        "modelo": 1970,
-        "idUsuario": 5
-      }, {
-        "id": 22,
-        "marca": "Honda",
-        "modelo": 1997,
-        "idUsuario": 5
-      }, {
-        "id": 23,
-        "marca": "Dodge",
-        "modelo": 1992,
-        "idUsuario": 7
-      }, {
-        "id": 24,
-        "marca": "Daewoo",
-        "modelo": 2000,
-        "idUsuario": 5
-      }, {
-        "id": 25,
-        "marca": "Saturn",
-        "modelo": 2003,
-        "idUsuario": 2
-      }, {
-        "id": 26,
-        "marca": "Mercury",
-        "modelo": 2006,
-        "idUsuario": 7
-      }, {
-        "id": 27,
-        "marca": "Maserati",
-        "modelo": 2006,
-        "idUsuario": 4
-      }, {
-        "id": 28,
-        "marca": "Toyota",
-        "modelo": 2006,
-        "idUsuario": 10
-      }, {
-        "id": 29,
-        "marca": "Kia",
-        "modelo": 2010,
-        "idUsuario": 8
-      }, {
-        "id": 30,
-        "marca": "Lamborghini",
-        "modelo": 2007,
-        "idUsuario": 8
-      }, {
-        "id": 31,
-        "marca": "Ford",
-        "modelo": 2001,
-        "idUsuario": 8
-      }, {
-        "id": 32,
-        "marca": "Mitsubishi",
-        "modelo": 1994,
-        "idUsuario": 1
-      }, {
-        "id": 33,
-        "marca": "Cadillac",
-        "modelo": 2005,
-        "idUsuario": 10
-      }, {
-        "id": 34,
-        "marca": "Mercury",
-        "modelo": 2004,
-        "idUsuario": 10
-      }, {
-        "id": 35,
-        "marca": "Mercedes-Benz",
-        "modelo": 2011,
-        "idUsuario": 1
-      }, {
-        "id": 36,
-        "marca": "Acura",
-        "modelo": 1997,
-        "idUsuario": 10
-      }, {
-        "id": 37,
-        "marca": "Porsche",
-        "modelo": 1985,
-        "idUsuario": 7
-      }, {
-        "id": 38,
-        "marca": "Ford",
-        "modelo": 2007,
-        "idUsuario": 8
-      }, {
-        "id": 39,
-        "marca": "Subaru",
-        "modelo": 1993,
-        "idUsuario": 10
-      }, {
-        "id": 40,
-        "marca": "Cadillac",
-        "modelo": 2011,
-        "idUsuario": 3
-      }, {
-        "id": 41,
-        "marca": "Mercedes-Benz",
-        "modelo": 1992,
-        "idUsuario": 5
-      }, {
-        "id": 42,
-        "marca": "Buick",
-        "modelo": 1989,
-        "idUsuario": 6
-      }, {
-        "id": 43,
-        "marca": "Volvo",
-        "modelo": 1999,
-        "idUsuario": 6
-      }, {
-        "id": 44,
-        "marca": "Nissan",
-        "modelo": 2008,
-        "idUsuario": 3
-      }, {
-        "id": 45,
-        "marca": "Infiniti",
-        "modelo": 1995,
-        "idUsuario": 9
-      }, {
-        "id": 46,
-        "marca": "Mitsubishi",
-        "modelo": 1989,
-        "idUsuario": 8
-      }, {
-        "id": 47,
-        "marca": "Toyota",
-        "modelo": 2012,
-        "idUsuario": 1
-      }, {
-        "id": 48,
-        "marca": "Ford",
-        "modelo": 2004,
-        "idUsuario": 10
-      }, {
-        "id": 49,
-        "marca": "GMC",
-        "modelo": 2008,
-        "idUsuario": 3
-      }, {
-        "id": 50,
-        "marca": "Chevrolet",
-        "modelo": 1992,
-        "idUsuario": 5
-      }],
-      "transacciones":
-      [{
-        "id": 1,
-        "fecha": "22/10/2021",
-        "monto": "$494120.22",
-        "idUsuario": 10,
-        "idVehiculo": 37,
-        "puntosObtenidos": 64,
-        "puntosRedimidos": 47,
-        "tipo": "efectivo"
-      }, {
-        "id": 2,
-        "fecha": "19/6/2020",
-        "monto": "$172196.48",
-        "idUsuario": 4,
-        "idVehiculo": 22,
-        "puntosObtenidos": 16,
-        "puntosRedimidos": 56,
-        "tipo": "mixta"
-      }, {
-        "id": 3,
-        "fecha": "27/4/2021",
-        "monto": "$238286.82",
-        "idUsuario": 8,
-        "idVehiculo": 32,
-        "puntosObtenidos": 16,
-        "puntosRedimidos": 25,
-        "tipo": "canje puntos"
-      }, {
-        "id": 4,
-        "fecha": "21/7/2020",
-        "monto": "$211802.21",
-        "idUsuario": 10,
-        "idVehiculo": 42,
-        "puntosObtenidos": 48,
-        "puntosRedimidos": 21,
-        "tipo": "mixta"
-      }, {
-        "id": 5,
-        "fecha": "9/3/2021",
-        "monto": "$494705.17",
-        "idUsuario": 9,
-        "idVehiculo": 9,
-        "puntosObtenidos": 40,
-        "puntosRedimidos": 65,
-        "tipo": "efectivo"
-      }, {
-        "id": 6,
-        "fecha": "24/5/2020",
-        "monto": "$17353.27",
-        "idUsuario": 2,
-        "idVehiculo": 19,
-        "puntosObtenidos": 29,
-        "puntosRedimidos": 91,
-        "tipo": "canje puntos"
-      }, {
-        "id": 7,
-        "fecha": "11/11/2020",
-        "monto": "$292794.25",
-        "idUsuario": 4,
-        "idVehiculo": 3,
-        "puntosObtenidos": 3,
-        "puntosRedimidos": 100,
-        "tipo": "canje puntos"
-      }, {
-        "id": 8,
-        "fecha": "19/6/2021",
-        "monto": "$54261.92",
-        "idUsuario": 7,
-        "idVehiculo": 7,
-        "puntosObtenidos": 72,
-        "puntosRedimidos": 39,
-        "tipo": "efectivo"
-      }, {
-        "id": 9,
-        "fecha": "1/5/2021",
-        "monto": "$99363.04",
-        "idUsuario": 2,
-        "idVehiculo": 15,
-        "puntosObtenidos": 100,
-        "puntosRedimidos": 20,
-        "tipo": "mixta"
-      }, {
-        "id": 10,
-        "fecha": "2/7/2021",
-        "monto": "$32583.79",
-        "idUsuario": 10,
-        "idVehiculo": 3,
-        "puntosObtenidos": 14,
-        "puntosRedimidos": 2,
-        "tipo": "canje puntos"
-      }, {
-        "id": 11,
-        "fecha": "26/2/2021",
-        "monto": "$84371.56",
-        "idUsuario": 2,
-        "idVehiculo": 19,
-        "puntosObtenidos": 60,
-        "puntosRedimidos": 88,
-        "tipo": "mixta"
-      }, {
-        "id": 12,
-        "fecha": "31/7/2020",
-        "monto": "$26308.08",
-        "idUsuario": 5,
-        "idVehiculo": 3,
-        "puntosObtenidos": 18,
-        "puntosRedimidos": 63,
-        "tipo": "efectivo"
-      }, {
-        "id": 13,
-        "fecha": "6/7/2021",
-        "monto": "$485447.17",
-        "idUsuario": 3,
-        "idVehiculo": 50,
-        "puntosObtenidos": 98,
-        "puntosRedimidos": 42,
-        "tipo": "canje puntos"
-      }, {
-        "id": 14,
-        "fecha": "1/2/2021",
-        "monto": "$455245.16",
-        "idUsuario": 4,
-        "idVehiculo": 36,
-        "puntosObtenidos": 8,
-        "puntosRedimidos": 63,
-        "tipo": "efectivo"
-      }, {
-        "id": 15,
-        "fecha": "26/6/2021",
-        "monto": "$180167.68",
-        "idUsuario": 3,
-        "idVehiculo": 34,
-        "puntosObtenidos": 88,
-        "puntosRedimidos": 96,
-        "tipo": "mixta"
-      }, {
-        "id": 16,
-        "fecha": "11/12/2020",
-        "monto": "$194660.04",
-        "idUsuario": 1,
-        "idVehiculo": 48,
-        "puntosObtenidos": 37,
-        "puntosRedimidos": 71,
-        "tipo": "canje puntos"
-      }, {
-        "id": 17,
-        "fecha": "22/1/2021",
-        "monto": "$71956.24",
-        "idUsuario": 8,
-        "idVehiculo": 22,
-        "puntosObtenidos": 16,
-        "puntosRedimidos": 52,
-        "tipo": "efectivo"
-      }, {
-        "id": 18,
-        "fecha": "15/4/2021",
-        "monto": "$454087.31",
-        "idUsuario": 3,
-        "idVehiculo": 17,
-        "puntosObtenidos": 44,
-        "puntosRedimidos": 65,
-        "tipo": "efectivo"
-      }, {
-        "id": 19,
-        "fecha": "6/6/2020",
-        "monto": "$101836.63",
-        "idUsuario": 1,
-        "idVehiculo": 28,
-        "puntosObtenidos": 83,
-        "puntosRedimidos": 62,
-        "tipo": "canje puntos"
-      }, {
-        "id": 20,
-        "fecha": "19/7/2021",
-        "monto": "$120150.54",
-        "idUsuario": 3,
-        "idVehiculo": 24,
-        "puntosObtenidos": 54,
-        "puntosRedimidos": 92,
-        "tipo": "canje puntos"
-      }, {
-        "id": 21,
-        "fecha": "29/9/2021",
-        "monto": "$103117.90",
-        "idUsuario": 1,
-        "idVehiculo": 36,
-        "puntosObtenidos": 34,
-        "puntosRedimidos": 73,
-        "tipo": "efectivo"
-      }, {
-        "id": 22,
-        "fecha": "11/8/2021",
-        "monto": "$30068.98",
-        "idUsuario": 8,
-        "idVehiculo": 40,
-        "puntosObtenidos": 70,
-        "puntosRedimidos": 51,
-        "tipo": "canje puntos"
-      }, {
-        "id": 23,
-        "fecha": "21/5/2021",
-        "monto": "$381616.72",
-        "idUsuario": 3,
-        "idVehiculo": 35,
-        "puntosObtenidos": 41,
-        "puntosRedimidos": 69,
-        "tipo": "canje puntos"
-      }, {
-        "id": 24,
-        "fecha": "17/9/2021",
-        "monto": "$332495.46",
-        "idUsuario": 3,
-        "idVehiculo": 31,
-        "puntosObtenidos": 94,
-        "puntosRedimidos": 96,
-        "tipo": "canje puntos"
-      }, {
-        "id": 25,
-        "fecha": "30/1/2021",
-        "monto": "$147926.61",
-        "idUsuario": 10,
-        "idVehiculo": 5,
-        "puntosObtenidos": 89,
-        "puntosRedimidos": 36,
-        "tipo": "efectivo"
-      }, {
-        "id": 26,
-        "fecha": "27/2/2021",
-        "monto": "$431195.89",
-        "idUsuario": 6,
-        "idVehiculo": 42,
-        "puntosObtenidos": 29,
-        "puntosRedimidos": 44,
-        "tipo": "mixta"
-      }, {
-        "id": 27,
-        "fecha": "25/3/2021",
-        "monto": "$388214.98",
-        "idUsuario": 2,
-        "idVehiculo": 11,
-        "puntosObtenidos": 61,
-        "puntosRedimidos": 43,
-        "tipo": "efectivo"
-      }, {
-        "id": 28,
-        "fecha": "18/12/2020",
-        "monto": "$230063.17",
-        "idUsuario": 7,
-        "idVehiculo": 4,
-        "puntosObtenidos": 2,
-        "puntosRedimidos": 8,
-        "tipo": "efectivo"
-      }, {
-        "id": 29,
-        "fecha": "3/12/2020",
-        "monto": "$71740.95",
-        "idUsuario": 2,
-        "idVehiculo": 9,
-        "puntosObtenidos": 85,
-        "puntosRedimidos": 64,
-        "tipo": "canje puntos"
-      }, {
-        "id": 30,
-        "fecha": "20/4/2021",
-        "monto": "$403709.16",
-        "idUsuario": 6,
-        "idVehiculo": 43,
-        "puntosObtenidos": 72,
-        "puntosRedimidos": 34,
-        "tipo": "canje puntos"
-      }, {
-        "id": 31,
-        "fecha": "8/10/2021",
-        "monto": "$288553.28",
-        "idUsuario": 5,
-        "idVehiculo": 24,
-        "puntosObtenidos": 64,
-        "puntosRedimidos": 31,
-        "tipo": "canje puntos"
-      }, {
-        "id": 32,
-        "fecha": "8/9/2020",
-        "monto": "$402590.52",
-        "idUsuario": 4,
-        "idVehiculo": 16,
-        "puntosObtenidos": 90,
-        "puntosRedimidos": 66,
-        "tipo": "canje puntos"
-      }, {
-        "id": 33,
-        "fecha": "3/9/2020",
-        "monto": "$40397.61",
-        "idUsuario": 6,
-        "idVehiculo": 13,
-        "puntosObtenidos": 25,
-        "puntosRedimidos": 91,
-        "tipo": "canje puntos"
-      }, {
-        "id": 34,
-        "fecha": "3/12/2020",
-        "monto": "$70020.62",
-        "idUsuario": 10,
-        "idVehiculo": 27,
-        "puntosObtenidos": 52,
-        "puntosRedimidos": 87,
-        "tipo": "efectivo"
-      }, {
-        "id": 35,
-        "fecha": "28/1/2021",
-        "monto": "$10897.08",
-        "idUsuario": 9,
-        "idVehiculo": 8,
-        "puntosObtenidos": 52,
-        "puntosRedimidos": 32,
-        "tipo": "canje puntos"
-      }, {
-        "id": 36,
-        "fecha": "6/7/2021",
-        "monto": "$314506.03",
-        "idUsuario": 9,
-        "idVehiculo": 30,
-        "puntosObtenidos": 29,
-        "puntosRedimidos": 81,
-        "tipo": "canje puntos"
-      }, {
-        "id": 37,
-        "fecha": "30/12/2020",
-        "monto": "$412218.90",
-        "idUsuario": 2,
-        "idVehiculo": 47,
-        "puntosObtenidos": 67,
-        "puntosRedimidos": 48,
-        "tipo": "mixta"
-      }, {
-        "id": 38,
-        "fecha": "13/11/2020",
-        "monto": "$440157.71",
-        "idUsuario": 5,
-        "idVehiculo": 47,
-        "puntosObtenidos": 77,
-        "puntosRedimidos": 66,
-        "tipo": "mixta"
-      }, {
-        "id": 39,
-        "fecha": "10/9/2020",
-        "monto": "$121288.59",
-        "idUsuario": 8,
-        "idVehiculo": 7,
-        "puntosObtenidos": 71,
-        "puntosRedimidos": 49,
-        "tipo": "efectivo"
-      }, {
-        "id": 40,
-        "fecha": "3/5/2021",
-        "monto": "$464678.30",
-        "idUsuario": 2,
-        "idVehiculo": 30,
-        "puntosObtenidos": 80,
-        "puntosRedimidos": 57,
-        "tipo": "canje puntos"
-      }, {
-        "id": 41,
-        "fecha": "22/10/2021",
-        "monto": "$37255.28",
-        "idUsuario": 2,
-        "idVehiculo": 20,
-        "puntosObtenidos": 95,
-        "puntosRedimidos": 11,
-        "tipo": "efectivo"
-      }, {
-        "id": 42,
-        "fecha": "26/12/2020",
-        "monto": "$115739.47",
-        "idUsuario": 9,
-        "idVehiculo": 22,
-        "puntosObtenidos": 60,
-        "puntosRedimidos": 51,
-        "tipo": "canje puntos"
-      }, {
-        "id": 43,
-        "fecha": "3/7/2021",
-        "monto": "$133213.43",
-        "idUsuario": 5,
-        "idVehiculo": 48,
-        "puntosObtenidos": 93,
-        "puntosRedimidos": 40,
-        "tipo": "efectivo"
-      }, {
-        "id": 44,
-        "fecha": "9/10/2020",
-        "monto": "$257274.48",
-        "idUsuario": 9,
-        "idVehiculo": 42,
-        "puntosObtenidos": 16,
-        "puntosRedimidos": 11,
-        "tipo": "canje puntos"
-      }, {
-        "id": 45,
-        "fecha": "19/6/2020",
-        "monto": "$136709.30",
-        "idUsuario": 9,
-        "idVehiculo": 10,
-        "puntosObtenidos": 67,
-        "puntosRedimidos": 45,
-        "tipo": "canje puntos"
-      }, {
-        "id": 46,
-        "fecha": "9/10/2021",
-        "monto": "$260417.06",
-        "idUsuario": 2,
-        "idVehiculo": 34,
-        "puntosObtenidos": 8,
-        "puntosRedimidos": 85,
-        "tipo": "mixta"
-      }, {
-        "id": 47,
-        "fecha": "13/12/2020",
-        "monto": "$191341.23",
-        "idUsuario": 7,
-        "idVehiculo": 36,
-        "puntosObtenidos": 36,
-        "puntosRedimidos": 17,
-        "tipo": "efectivo"
-      }, {
-        "id": 48,
-        "fecha": "13/6/2020",
-        "monto": "$124805.34",
-        "idUsuario": 6,
-        "idVehiculo": 5,
-        "puntosObtenidos": 97,
-        "puntosRedimidos": 13,
-        "tipo": "efectivo"
-      }, {
-        "id": 49,
-        "fecha": "15/4/2021",
-        "monto": "$59441.25",
-        "idUsuario": 9,
-        "idVehiculo": 31,
-        "puntosObtenidos": 47,
-        "puntosRedimidos": 69,
-        "tipo": "mixta"
-      }, {
-        "id": 50,
-        "fecha": "18/11/2020",
-        "monto": "$346143.52",
-        "idUsuario": 6,
-        "idVehiculo": 31,
-        "puntosObtenidos": 90,
-        "puntosRedimidos": 54,
-        "tipo": "efectivo"
-      }]
-    
+      "id": 1,
+      "marca": "Ford",
+      "modelo": 1998,
+      "placa": "WXC125",
+      "idUsuario": 3
+    },
+    {
+      "id": 2,
+      "marca": "Mitsubishi",
+      "modelo": 1992,
+      "placa": "WXC125",
+      "idUsuario": 2
+    },
+    {
+      "id": 3,
+      "marca": "Hyundai",
+      "modelo": 2007,
+      "placa": "WXC125",
+      "idUsuario": 8
+    },
+    {
+      "id": 4,
+      "marca": "Buick",
+      "modelo": 1995,
+      "placa": "WXC125",
+      "idUsuario": 1
+    },
+    {
+      "id": 5,
+      "marca": "Chevrolet",
+      "modelo": 2007,
+      "placa": "WXC125",
+      "idUsuario": 3
+    },
+    {
+      "id": 6,
+      "marca": "Lexus",
+      "modelo": 2005,
+      "placa": "WXC125",
+      "idUsuario": 8
+    },
+    {
+      "id": 7,
+      "marca": "Honda",
+      "modelo": 1990,
+      "placa": "WXC125",
+      "idUsuario": 5
+    },
+    {
+      "id": 8,
+      "marca": "Ford",
+      "modelo": 1992,
+      "placa": "WXC125",
+      "idUsuario": 2
+    },
+    {
+      "id": 9,
+      "marca": "GMC",
+      "modelo": 1994,
+      "placa": "WXC125",
+      "idUsuario": 7
+    },
+    {
+      "id": 10,
+      "marca": "Infiniti",
+      "modelo": 1998,
+      "placa": "WXC125",
+      "idUsuario": 7
+    },
+    {
+      "id": 11,
+      "marca": "Audi",
+      "modelo": 1996,
+      "placa": "WXC125",
+      "idUsuario": 10
+    },
+    {
+      "id": 12,
+      "marca": "Toyota",
+      "modelo": 2006,
+      "placa": "WXC125",
+      "idUsuario": 5
+    },
+    {
+      "id": 13,
+      "marca": "Ford",
+      "modelo": 1987,
+      "placa": "WXC125",
+      "idUsuario": 8
+    },
+    {
+      "id": 14,
+      "marca": "Saturn",
+      "modelo": 2005,
+      "placa": "WXC125",
+      "idUsuario": 6
+    },
+    {
+      "id": 15,
+      "marca": "Ford",
+      "modelo": 1992,
+      "placa": "WXC125",
+      "idUsuario": 10
+    },
+    {
+      "id": 16,
+      "marca": "Hyundai",
+      "modelo": 2009,
+      "placa": "WXC125",
+      "idUsuario": 3
+    },
+    {
+      "id": 17,
+      "marca": "Oldsmobile",
+      "modelo": 1993,
+      "placa": "WXC125",
+      "idUsuario": 9
+    },
+    {
+      "id": 18,
+      "marca": "Chrysler",
+      "modelo": 2001,
+      "placa": "WXC125",
+      "idUsuario": 10
+    },
+    {
+      "id": 19,
+      "marca": "Ford",
+      "modelo": 2006,
+      "placa": "WXC125",
+      "idUsuario": 9
+    },
+    {
+      "id": 20,
+      "marca": "Volvo",
+      "modelo": 2009,
+      "placa": "WXC125",
+      "idUsuario": 8
+    },
+    {
+      "id": 21,
+      "marca": "Porsche",
+      "modelo": 1970,
+      "placa": "WXC125",
+      "idUsuario": 5
+    },
+    {
+      "id": 22,
+      "marca": "Honda",
+      "modelo": 1997,
+      "placa": "WXC125",
+      "idUsuario": 5
+    },
+    {
+      "id": 23,
+      "marca": "Dodge",
+      "modelo": 1992,
+      "placa": "WXC125",
+      "idUsuario": 7
+    },
+    {
+      "id": 24,
+      "marca": "Daewoo",
+      "modelo": 2000,
+      "placa": "WXC125",
+      "idUsuario": 5
+    },
+    {
+      "id": 25,
+      "marca": "Saturn",
+      "modelo": 2003,
+      "placa": "WXC125",
+      "idUsuario": 2
+    },
+    {
+      "id": 26,
+      "marca": "Mercury",
+      "modelo": 2006,
+      "placa": "WXC125",
+      "idUsuario": 7
+    },
+    {
+      "id": 27,
+      "marca": "Maserati",
+      "modelo": 2006,
+      "placa": "WXC125",
+      "idUsuario": 4
+    },
+    {
+      "id": 28,
+      "marca": "Toyota",
+      "modelo": 2006,
+      "placa": "WXC125",
+      "idUsuario": 10
+    },
+    {
+      "id": 29,
+      "marca": "Kia",
+      "modelo": 2010,
+      "placa": "WXC125",
+      "idUsuario": 8
+    },
+    {
+      "id": 30,
+      "marca": "Lamborghini",
+      "modelo": 2007,
+      "placa": "WXC125",
+      "idUsuario": 8
+    },
+    {
+      "id": 31,
+      "marca": "Ford",
+      "modelo": 2001,
+      "placa": "WXC125",
+      "idUsuario": 8
+    },
+    {
+      "id": 32,
+      "marca": "Mitsubishi",
+      "modelo": 1994,
+      "placa": "WXC125",
+      "idUsuario": 1
+    },
+    {
+      "id": 33,
+      "marca": "Cadillac",
+      "modelo": 2005,
+      "placa": "WXC125",
+      "idUsuario": 10
+    },
+    {
+      "id": 34,
+      "marca": "Mercury",
+      "modelo": 2004,
+      "placa": "WXC125",
+      "idUsuario": 10
+    },
+    {
+      "id": 35,
+      "marca": "Mercedes-Benz",
+      "modelo": 2011,
+      "placa": "WXC125",
+      "idUsuario": 1
+    },
+    {
+      "id": 36,
+      "marca": "Acura",
+      "modelo": 1997,
+      "placa": "WXC125",
+      "idUsuario": 10
+    },
+    {
+      "id": 37,
+      "marca": "Porsche",
+      "modelo": 1985,
+      "placa": "WXC125",
+      "idUsuario": 7
+    },
+    {
+      "id": 38,
+      "marca": "Ford",
+      "modelo": 2007,
+      "placa": "WXC125",
+      "idUsuario": 8
+    },
+    {
+      "id": 39,
+      "marca": "Subaru",
+      "modelo": 1993,
+      "placa": "WXC125",
+      "idUsuario": 10
+    },
+    {
+      "id": 40,
+      "marca": "Cadillac",
+      "modelo": 2011,
+      "placa": "WXC125",
+      "idUsuario": 3
+    },
+    {
+      "id": 41,
+      "marca": "Mercedes-Benz",
+      "modelo": 1992,
+      "placa": "WXC125",
+      "idUsuario": 5
+    },
+    {
+      "id": 42,
+      "marca": "Buick",
+      "modelo": 1989,
+      "placa": "WXC125",
+      "idUsuario": 6
+    },
+    {
+      "id": 43,
+      "marca": "Volvo",
+      "modelo": 1999,
+      "placa": "WXC125",
+      "idUsuario": 6
+    },
+    {
+      "id": 44,
+      "marca": "Nissan",
+      "modelo": 2008,
+      "placa": "WXC125",
+      "idUsuario": 3
+    },
+    {
+      "id": 45,
+      "marca": "Infiniti",
+      "modelo": 1995,
+      "placa": "WXC125",
+      "idUsuario": 9
+    },
+    {
+      "id": 46,
+      "marca": "Mitsubishi",
+      "modelo": 1989,
+      "placa": "WXC125",
+      "idUsuario": 8
+    },
+    {
+      "id": 47,
+      "marca": "Toyota",
+      "modelo": 2012,
+      "placa": "WXC125",
+      "idUsuario": 1
+    },
+    {
+      "id": 48,
+      "marca": "Ford",
+      "modelo": 2004,
+      "placa": "WXC125",
+      "idUsuario": 10
+    },
+    {
+      "id": 49,
+      "marca": "GMC",
+      "modelo": 2008,
+      "placa": "WXC125",
+      "idUsuario": 3
+    },
+    {
+      "id": 50,
+      "marca": "Chevrolet",
+      "modelo": 1992,
+      "placa": "WXC125",
+      "idUsuario": 5
+    },
+    {
+      "id": 1245,
+      "marca": "tamayito",
+      "modelo": 0,
+      "placa": "WXC125",
+      "idUsuario": 1
+    },
+    {
+      "id": 1246,
+      "marca": "morita",
+      "modelo": 0,
+      "placa": "",
+      "idUsuario": 1
+    },
+    {
+      "id": 1247,
+      "marca": "morita",
+      "modelo": 0,
+      "placa": "",
+      "idUsuario": 1
+    }
+  ],
+  "transacciones": [
+    {
+      "id": 1,
+      "fecha": "22/10/2021",
+      "monto": "$494120.22",
+      "placa": "WXC125",
+      "idUsuario": 10,
+      "idVehiculo": 37,
+      "puntosObtenidos": 64,
+      "puntosRedimidos": 47,
+      "tipo": "efectivo"
+    },
+    {
+      "id": 2,
+      "fecha": "19/6/2020",
+      "monto": "$172196.48",
+      "placa": "WXC125",
+      "idUsuario": 4,
+      "idVehiculo": 22,
+      "puntosObtenidos": 16,
+      "puntosRedimidos": 56,
+      "tipo": "mixta"
+    },
+    {
+      "id": 3,
+      "fecha": "27/4/2021",
+      "monto": "$238286.82",
+      "placa": "WXC125",
+      "idUsuario": 8,
+      "idVehiculo": 32,
+      "puntosObtenidos": 16,
+      "puntosRedimidos": 25,
+      "tipo": "canje puntos"
+    },
+    {
+      "id": 4,
+      "fecha": "21/7/2020",
+      "monto": "$211802.21",
+      "placa": "WXC125",
+      "idUsuario": 10,
+      "idVehiculo": 42,
+      "puntosObtenidos": 48,
+      "puntosRedimidos": 21,
+      "tipo": "mixta"
+    },
+    {
+      "id": 5,
+      "fecha": "9/3/2021",
+      "monto": "$494705.17",
+      "placa": "WXC125",
+      "idUsuario": 9,
+      "idVehiculo": 9,
+      "puntosObtenidos": 40,
+      "puntosRedimidos": 65,
+      "tipo": "efectivo"
+    },
+    {
+      "id": 6,
+      "fecha": "24/5/2020",
+      "monto": "$17353.27",
+      "placa": "WXC125",
+      "idUsuario": 2,
+      "idVehiculo": 19,
+      "puntosObtenidos": 29,
+      "puntosRedimidos": 91,
+      "tipo": "canje puntos"
+    },
+    {
+      "id": 7,
+      "fecha": "11/11/2020",
+      "monto": "$292794.25",
+      "placa": "WXC125",
+      "idUsuario": 4,
+      "idVehiculo": 3,
+      "puntosObtenidos": 3,
+      "puntosRedimidos": 100,
+      "tipo": "canje puntos"
+    },
+    {
+      "id": 8,
+      "fecha": "19/6/2021",
+      "monto": "$54261.92",
+      "placa": "WXC125",
+      "idUsuario": 7,
+      "idVehiculo": 7,
+      "puntosObtenidos": 72,
+      "puntosRedimidos": 39,
+      "tipo": "efectivo"
+    },
+    {
+      "id": 9,
+      "fecha": "1/5/2021",
+      "monto": "$99363.04",
+      "placa": "WXC125",
+      "idUsuario": 2,
+      "idVehiculo": 15,
+      "puntosObtenidos": 100,
+      "puntosRedimidos": 20,
+      "tipo": "mixta"
+    },
+    {
+      "id": 10,
+      "fecha": "2/7/2021",
+      "monto": "$32583.79",
+      "placa": "WXC125",
+      "idUsuario": 10,
+      "idVehiculo": 3,
+      "puntosObtenidos": 14,
+      "puntosRedimidos": 2,
+      "tipo": "canje puntos"
+    },
+    {
+      "id": 11,
+      "fecha": "26/2/2021",
+      "monto": "$84371.56",
+      "placa": "WXC125",
+      "idUsuario": 2,
+      "idVehiculo": 19,
+      "puntosObtenidos": 60,
+      "puntosRedimidos": 88,
+      "tipo": "mixta"
+    },
+    {
+      "id": 12,
+      "fecha": "31/7/2020",
+      "monto": "$26308.08",
+      "placa": "WXC125",
+      "idUsuario": 5,
+      "idVehiculo": 3,
+      "puntosObtenidos": 18,
+      "puntosRedimidos": 63,
+      "tipo": "efectivo"
+    },
+    {
+      "id": 13,
+      "fecha": "6/7/2021",
+      "monto": "$485447.17",
+      "placa": "WXC125",
+      "idUsuario": 3,
+      "idVehiculo": 50,
+      "puntosObtenidos": 98,
+      "puntosRedimidos": 42,
+      "tipo": "canje puntos"
+    },
+    {
+      "id": 14,
+      "fecha": "1/2/2021",
+      "monto": "$455245.16",
+      "placa": "WXC125",
+      "idUsuario": 4,
+      "idVehiculo": 36,
+      "puntosObtenidos": 8,
+      "puntosRedimidos": 63,
+      "tipo": "efectivo"
+    },
+    {
+      "id": 15,
+      "fecha": "26/6/2021",
+      "monto": "$180167.68",
+      "placa": "WXC125",
+      "idUsuario": 3,
+      "idVehiculo": 34,
+      "puntosObtenidos": 88,
+      "puntosRedimidos": 96,
+      "tipo": "mixta"
+    },
+    {
+      "id": 16,
+      "fecha": "11/12/2020",
+      "monto": "$194660.04",
+      "placa": "WXC125",
+      "idUsuario": 1,
+      "idVehiculo": 48,
+      "puntosObtenidos": 37,
+      "puntosRedimidos": 71,
+      "tipo": "canje puntos"
+    },
+    {
+      "id": 17,
+      "fecha": "22/1/2021",
+      "monto": "$71956.24",
+      "placa": "WXC125",
+      "idUsuario": 8,
+      "idVehiculo": 22,
+      "puntosObtenidos": 16,
+      "puntosRedimidos": 52,
+      "tipo": "efectivo"
+    },
+    {
+      "id": 18,
+      "fecha": "15/4/2021",
+      "monto": "$454087.31",
+      "placa": "WXC125",
+      "idUsuario": 3,
+      "idVehiculo": 17,
+      "puntosObtenidos": 44,
+      "puntosRedimidos": 65,
+      "tipo": "efectivo"
+    },
+    {
+      "id": 19,
+      "fecha": "6/6/2020",
+      "monto": "$101836.63",
+      "placa": "WXC125",
+      "idUsuario": 1,
+      "idVehiculo": 28,
+      "puntosObtenidos": 83,
+      "puntosRedimidos": 62,
+      "tipo": "canje puntos"
+    },
+    {
+      "id": 20,
+      "fecha": "19/7/2021",
+      "monto": "$120150.54",
+      "placa": "WXC125",
+      "idUsuario": 3,
+      "idVehiculo": 24,
+      "puntosObtenidos": 54,
+      "puntosRedimidos": 92,
+      "tipo": "canje puntos"
+    },
+    {
+      "id": 21,
+      "fecha": "29/9/2021",
+      "monto": "$103117.90",
+      "placa": "WXC125",
+      "idUsuario": 1,
+      "idVehiculo": 36,
+      "puntosObtenidos": 34,
+      "puntosRedimidos": 73,
+      "tipo": "efectivo"
+    },
+    {
+      "id": 22,
+      "fecha": "11/8/2021",
+      "monto": "$30068.98",
+      "placa": "WXC125",
+      "idUsuario": 8,
+      "idVehiculo": 40,
+      "puntosObtenidos": 70,
+      "puntosRedimidos": 51,
+      "tipo": "canje puntos"
+    },
+    {
+      "id": 23,
+      "fecha": "21/5/2021",
+      "monto": "$381616.72",
+      "placa": "WXC125",
+      "idUsuario": 3,
+      "idVehiculo": 35,
+      "puntosObtenidos": 41,
+      "puntosRedimidos": 69,
+      "tipo": "canje puntos"
+    },
+    {
+      "id": 24,
+      "fecha": "17/9/2021",
+      "monto": "$332495.46",
+      "placa": "WXC125",
+      "idUsuario": 3,
+      "idVehiculo": 31,
+      "puntosObtenidos": 94,
+      "puntosRedimidos": 96,
+      "tipo": "canje puntos"
+    },
+    {
+      "id": 25,
+      "fecha": "30/1/2021",
+      "monto": "$147926.61",
+      "placa": "WXC125",
+      "idUsuario": 10,
+      "idVehiculo": 5,
+      "puntosObtenidos": 89,
+      "puntosRedimidos": 36,
+      "tipo": "efectivo"
+    },
+    {
+      "id": 26,
+      "fecha": "27/2/2021",
+      "monto": "$431195.89",
+      "placa": "WXC125",
+      "idUsuario": 6,
+      "idVehiculo": 42,
+      "puntosObtenidos": 29,
+      "puntosRedimidos": 44,
+      "tipo": "mixta"
+    },
+    {
+      "id": 27,
+      "fecha": "25/3/2021",
+      "monto": "$388214.98",
+      "placa": "WXC125",
+      "idUsuario": 2,
+      "idVehiculo": 11,
+      "puntosObtenidos": 61,
+      "puntosRedimidos": 43,
+      "tipo": "efectivo"
+    },
+    {
+      "id": 28,
+      "fecha": "18/12/2020",
+      "monto": "$230063.17",
+      "placa": "WXC125",
+      "idUsuario": 7,
+      "idVehiculo": 4,
+      "puntosObtenidos": 2,
+      "puntosRedimidos": 8,
+      "tipo": "efectivo"
+    },
+    {
+      "id": 29,
+      "fecha": "3/12/2020",
+      "monto": "$71740.95",
+      "placa": "WXC125",
+      "idUsuario": 2,
+      "idVehiculo": 9,
+      "puntosObtenidos": 85,
+      "puntosRedimidos": 64,
+      "tipo": "canje puntos"
+    },
+    {
+      "id": 30,
+      "fecha": "20/4/2021",
+      "monto": "$403709.16",
+      "placa": "WXC125",
+      "idUsuario": 6,
+      "idVehiculo": 43,
+      "puntosObtenidos": 72,
+      "puntosRedimidos": 34,
+      "tipo": "canje puntos"
+    },
+    {
+      "id": 31,
+      "fecha": "8/10/2021",
+      "monto": "$288553.28",
+      "placa": "WXC125",
+      "idUsuario": 5,
+      "idVehiculo": 24,
+      "puntosObtenidos": 64,
+      "puntosRedimidos": 31,
+      "tipo": "canje puntos"
+    },
+    {
+      "id": 32,
+      "fecha": "8/9/2020",
+      "monto": "$402590.52",
+      "placa": "WXC125",
+      "idUsuario": 4,
+      "idVehiculo": 16,
+      "puntosObtenidos": 90,
+      "puntosRedimidos": 66,
+      "tipo": "canje puntos"
+    },
+    {
+      "id": 33,
+      "fecha": "3/9/2020",
+      "monto": "$40397.61",
+      "placa": "WXC125",
+      "idUsuario": 6,
+      "idVehiculo": 13,
+      "puntosObtenidos": 25,
+      "puntosRedimidos": 91,
+      "tipo": "canje puntos"
+    },
+    {
+      "id": 34,
+      "fecha": "3/12/2020",
+      "monto": "$70020.62",
+      "placa": "WXC125",
+      "idUsuario": 10,
+      "idVehiculo": 27,
+      "puntosObtenidos": 52,
+      "puntosRedimidos": 87,
+      "tipo": "efectivo"
+    },
+    {
+      "id": 35,
+      "fecha": "28/1/2021",
+      "monto": "$10897.08",
+      "placa": "WXC125",
+      "idUsuario": 9,
+      "idVehiculo": 8,
+      "puntosObtenidos": 52,
+      "puntosRedimidos": 32,
+      "tipo": "canje puntos"
+    },
+    {
+      "id": 36,
+      "fecha": "6/7/2021",
+      "monto": "$314506.03",
+      "placa": "WXC125",
+      "idUsuario": 9,
+      "idVehiculo": 30,
+      "puntosObtenidos": 29,
+      "puntosRedimidos": 81,
+      "tipo": "canje puntos"
+    },
+    {
+      "id": 37,
+      "fecha": "30/12/2020",
+      "monto": "$412218.90",
+      "placa": "WXC125",
+      "idUsuario": 2,
+      "idVehiculo": 47,
+      "puntosObtenidos": 67,
+      "puntosRedimidos": 48,
+      "tipo": "mixta"
+    },
+    {
+      "id": 38,
+      "fecha": "13/11/2020",
+      "monto": "$440157.71",
+      "placa": "WXC125",
+      "idUsuario": 5,
+      "idVehiculo": 47,
+      "puntosObtenidos": 77,
+      "puntosRedimidos": 66,
+      "tipo": "mixta"
+    },
+    {
+      "id": 39,
+      "fecha": "10/9/2020",
+      "monto": "$121288.59",
+      "placa": "WXC125",
+      "idUsuario": 8,
+      "idVehiculo": 7,
+      "puntosObtenidos": 71,
+      "puntosRedimidos": 49,
+      "tipo": "efectivo"
+    },
+    {
+      "id": 40,
+      "fecha": "3/5/2021",
+      "monto": "$464678.30",
+      "placa": "WXC125",
+      "idUsuario": 2,
+      "idVehiculo": 30,
+      "puntosObtenidos": 80,
+      "puntosRedimidos": 57,
+      "tipo": "canje puntos"
+    },
+    {
+      "id": 41,
+      "fecha": "22/10/2021",
+      "monto": "$37255.28",
+      "placa": "WXC125",
+      "idUsuario": 2,
+      "idVehiculo": 20,
+      "puntosObtenidos": 95,
+      "puntosRedimidos": 11,
+      "tipo": "efectivo"
+    },
+    {
+      "id": 42,
+      "fecha": "26/12/2020",
+      "monto": "$115739.47",
+      "placa": "WXC125",
+      "idUsuario": 9,
+      "idVehiculo": 22,
+      "puntosObtenidos": 60,
+      "puntosRedimidos": 51,
+      "tipo": "canje puntos"
+    },
+    {
+      "id": 43,
+      "fecha": "3/7/2021",
+      "monto": "$133213.43",
+      "placa": "WXC125",
+      "idUsuario": 5,
+      "idVehiculo": 48,
+      "puntosObtenidos": 93,
+      "puntosRedimidos": 40,
+      "tipo": "efectivo"
+    },
+    {
+      "id": 44,
+      "fecha": "9/10/2020",
+      "monto": "$257274.48",
+      "placa": "WXC125",
+      "idUsuario": 9,
+      "idVehiculo": 42,
+      "puntosObtenidos": 16,
+      "puntosRedimidos": 11,
+      "tipo": "canje puntos"
+    },
+    {
+      "id": 45,
+      "fecha": "19/6/2020",
+      "monto": "$136709.30",
+      "placa": "WXC125",
+      "idUsuario": 9,
+      "idVehiculo": 10,
+      "puntosObtenidos": 67,
+      "puntosRedimidos": 45,
+      "tipo": "canje puntos"
+    },
+    {
+      "id": 46,
+      "fecha": "9/10/2021",
+      "monto": "$260417.06",
+      "placa": "WXC125",
+      "idUsuario": 2,
+      "idVehiculo": 34,
+      "puntosObtenidos": 8,
+      "puntosRedimidos": 85,
+      "tipo": "mixta"
+    },
+    {
+      "id": 47,
+      "fecha": "13/12/2020",
+      "monto": "$191341.23",
+      "placa": "WXC125",
+      "idUsuario": 7,
+      "idVehiculo": 36,
+      "puntosObtenidos": 36,
+      "puntosRedimidos": 17,
+      "tipo": "efectivo"
+    },
+    {
+      "id": 48,
+      "fecha": "13/6/2020",
+      "monto": "$124805.34",
+      "placa": "WXC125",
+      "idUsuario": 6,
+      "idVehiculo": 5,
+      "puntosObtenidos": 97,
+      "puntosRedimidos": 13,
+      "tipo": "efectivo"
+    },
+    {
+      "id": 49,
+      "fecha": "15/4/2021",
+      "monto": "$59441.25",
+      "placa": "WXC125",
+      "idUsuario": 9,
+      "idVehiculo": 31,
+      "puntosObtenidos": 47,
+      "puntosRedimidos": 69,
+      "tipo": "mixta"
+    },
+    {
+      "id": 50,
+      "fecha": "18/11/2020",
+      "monto": "$346143.52",
+      "placa": "WXC125",
+      "idUsuario": 6,
+      "idVehiculo": 31,
+      "puntosObtenidos": 90,
+      "puntosRedimidos": 54,
+      "tipo": "efectivo"
+    }
+  ]
 }

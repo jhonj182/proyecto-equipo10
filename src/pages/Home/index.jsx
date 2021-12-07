@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import clienteAxios from '../../config/axios'
+import { Redirect, useLocation } from "react-router-dom";
+import clienteAxios from '../../config/axios';
+import Cookies from 'universal-cookie';
+import md5 from 'md5'; 
 
-const Index = () => {
+
+const Index = (props) => {
+  const cookies = new Cookies(); 
+  const location = useLocation();
   const [users, saveUser] = useState({
     usuario: '',
     password: ''
@@ -17,9 +23,25 @@ const Index = () => {
 
     const consultarUsuario = (event)=>{
       event.preventDefault();
-      clienteAxios.get('/users', { params: {usuario: users.usuario, password: users.password}})
-      .then(respuesta => {
-        console.log(respuesta.data);
+      var pass = md5(users.password);
+      clienteAxios.get('/users', { params: {usuario: users.usuario, password: pass}})
+      .then(response => {
+        console.log(response)
+        console.log(response.data.length)
+        if(response.data.length > 0){
+          const respuesta=response.data[0];
+          localStorage.setItem('user', JSON.stringify(respuesta));
+          cookies.set('id', respuesta.id, {path: "/"});
+          cookies.set('nombre', respuesta.nombres, {path: "/"});
+          cookies.set('usuario', respuesta.usuario, {path: "/"});
+          cookies.set('apellidos', respuesta.apellidos, {path: "/"});
+          cookies.set('rol', respuesta.rol, {path: "/"});
+          cookies.set('avatar', respuesta.avatar, {path: "/"});
+          alert(`Bienvenido ${respuesta.nombres} ${respuesta.apellidos}`);
+          window.location = '/profile';
+          // <Redirect to={{ pathname: "/" , state: { from: location }}} />
+        }
+
       })
       .catch(error =>{
         console.log(error);
@@ -66,7 +88,7 @@ const Index = () => {
                   name="usuario" 
                   className="form-control" 
                   id="exampleInputEmail1" 
-                  onChange={actualizarState}
+                  onKeyUp={actualizarState}
                   aria-describedby="emailHelp" />
                 </div>
                 <div className="mb-3">
@@ -74,7 +96,7 @@ const Index = () => {
                   <input type="password" 
                   name="password" 
                   className="form-control" 
-                  onChange={actualizarState}
+                  onKeyUp={actualizarState}
                   id="exampleInputPassword1" />
                 </div>
                 <div className="mb-3 form-check">
