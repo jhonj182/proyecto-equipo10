@@ -3,18 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Head from './components/Header.jsx';
 import Cookies from 'universal-cookie';
+import { BrowserRouter } from 'react-router-dom';
 
 let cookies = new Cookies()
 if(!cookies.get('username')){
     // window.location.href="./";
   }
 ReactDOM.render(
-  <React.StrictMode>
-    {!cookies.get('username')? '' :  <Head />}
+  <BrowserRouter>
     <App />
-  </React.StrictMode>,
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import logo from '../assets/img/logo.svg'
 import Status from './Status'
+import { NavLink} from 'react-router-dom'
 
 const Head = () => {
   return (
@@ -17,41 +18,41 @@ const Head = () => {
             <div className="collapse navbar-collapse col-log-6 justify-content-end" id="navbarNav">
               <ul className="navbar-nav bd-highlight">
                 <li className="nav-item mx-2 my-2">
-                <a className="nav-link px-3 btn btn-primary text-white "
-                  href="/register-car/"
-                  aria-current="page">Registrar vehiculo</a>
+                <NavLink className="nav-link px-3 btn btn-primary text-white "
+                  exact to="/register-car/"
+                  aria-current="page">Registrar vehiculo</NavLink>
                 </li>
                 <li className="nav-item mx-2 my-2">
-                <a className="nav-link px-3 btn btn-primary text-white "
-                  href="/car-list/"
-                  aria-current="page">Ver Vehiculos</a>
+                <NavLink className="nav-link px-3 btn btn-primary text-white "
+                  exact to="/car-list/"
+                  aria-current="page">Ver Vehiculos</NavLink>
                 </li>
                 <li className="nav-item mx-2 my-2">
-                <a className="nav-link px-3 btn btn-primary text-white "
-                  href="/edit-profile/"
-                  aria-current="page">Editar mi Perfil</a>
+                <NavLink className="nav-link px-3 btn btn-primary text-white "
+                  exact to="/edit-profile/"
+                  aria-current="page">Editar mi Perfil</NavLink>
                 </li>
                 <li className="nav-item mx-2 my-2">
-                <a className="nav-link px-3 btn btn-primary text-white "
-                  href="/charge-account/"
-                  aria-current="page">Recargar</a>
+                <NavLink className="nav-link px-3 btn btn-primary text-white "
+                  exact to="/charge-account/"
+                  aria-current="page">Recargar</NavLink>
                 </li>
                 <li className="nav-item mx-2 my-2">
-                <a className="nav-link px-3 btn btn-primary text-white "
-                  href="/transaction-history/"
-                  aria-current="page">Transacciones</a>
+                <NavLink className="nav-link px-3 btn btn-primary text-white "
+                  exact to="/transaction-history/"
+                  aria-current="page">Transacciones</NavLink>
                 </li>
                 <li className="nav-item mx-2 my-2">
-                <a className="nav-link px-3 btn btn-primary text-white "
-                  href="/logout/"
-                  aria-current="page">Salir</a>
+                <NavLink className="nav-link px-3 btn btn-primary text-white "
+                  exact to="/logout/"
+                  aria-current="page">Salir</NavLink>
                 </li>
               </ul>
             </div>
           </div>
         </nav>
     </header>
-    <Status />
+      <Status />
     </Fragment>
    );
 };

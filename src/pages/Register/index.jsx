@@ -1,5 +1,5 @@
 import React, { Fragment }from 'react';
-import RegistrarVehiculo from '../../components/RegistrarUsuario.jsx'
+import RegistrarVehiculo from '../../components/RegistrarVehiculo.jsx'
 
 const Index = () => {
   return ( 
