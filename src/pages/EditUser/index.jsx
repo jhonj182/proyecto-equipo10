@@ -1,10 +1,11 @@
 import React, { Fragment }from 'react';
 import EditarUsuario from '../../components/EditarUsuario.jsx'
 
-const Index = () => {
+const Index = ( props ) => {
+  const { user } = props; 
   return ( 
     <Fragment>
-      <EditarUsuario />
+      {/* <EditarUsuario user = {user}/> */}
     </Fragment>
   );
 }

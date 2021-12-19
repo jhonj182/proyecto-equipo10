@@ -1,6 +1,40 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
+import clienteAxios from '../config/axios';
 
-const Table = () => {
+const EditarUsuario = (props) => {
+  const { user } = props;
+  const { id, nombres, apellidos, documento, usuario, celular, password, avatar, rol } = user;
+  const [usu, updateUser] = useState({
+    id: id,
+    nombres: nombres, 
+    apellidos: apellidos,
+    celular: celular,
+    documento: documento,
+    password: password,
+    usuario: usuario,
+    rol: rol,
+    avatar: avatar
+  });
+  const actualizarUsu= event =>{
+    updateUser({
+      ...usu,
+      [event.target.name]: event.target.value 
+    })
+  }
+  const actualizarUsuario = (event) =>{
+    clienteAxios.put(`/users/${id}`, usu)
+    .then(response => {
+      console.log(response)
+      alert("usuario actualizado con éxito ");
+      window.location = '/dashboard';
+    })
+    .catch(error =>{
+      console.log(error);
+      alert("error vehiculo no registrado con éxito ");
+    })
+    event.preventDefault();
+    console.log(usu)
+  }
   return (
     <Fragment>
       <section className="container-fluid contenedor ">
@@ -11,17 +45,36 @@ const Table = () => {
             >
               Editar Perfil
             </h1>
-            <form className="row g-3 text-light">
+            <form 
+            className="row g-3 text-light"
+            onSubmit={actualizarUsuario}
+            >
               <div className="col-sm-12">
                 <label htmlFor="name" className="form-label">
-                  Nombres y Apellidos
+                  Nombres
                 </label>
                 <input
+                  onChange = {actualizarUsu} 
                   type="text"
                   className="form-control js-name"
                   id="name"
-                  name="name"
-                  style={{ textTransform: "uppercase" }}
+                  name="nombres"
+                  placeholder={nombres}
+                  style={{ textTransform: "capitalize" }}
+                />
+              </div>
+              <div className="col-sm-12">
+                <label htmlFor="lastname" className="form-label">
+                  Apellidos
+                </label>
+                <input
+                  onChange = {actualizarUsu}  
+                  type="text"
+                  className="form-control js-name"
+                  id="lastname"
+                  name="apellidos"
+                  placeholder={apellidos}
+                  style={{ textTransform: "capitalize" }}
                 />
               </div>
               <div className="col-sm-12">
@@ -29,11 +82,13 @@ const Table = () => {
                   Documento
                 </label>
                 <input
+                  onChange = {actualizarUsu}  
                   type="text"
                   className="form-control js-name"
-                  id="name"
-                  name="name"
-                  style={{ textTransform: "uppercase" }}
+                  id="documento"
+                  name="documento"
+                  disabled
+                  placeholder={documento}
                 />
               </div>
               <div className="col-sm-12">
@@ -41,11 +96,14 @@ const Table = () => {
                   Correo Electrónico
                 </label>
                 <input
+                  onChange = {actualizarUsu} 
                   type="text"
                   className="form-control js-name"
-                  id="name"
-                  name="name"
-                  style={{ textTransform: "uppercase" }}
+                  id="usuario"
+                  name="usuario"
+                  placeholder = {usuario}
+                  disabled
+                  style={{ textTransform: "lowercase" }}
                 />
               </div>
               <div className="col-sm-12">
@@ -53,8 +111,12 @@ const Table = () => {
                   Celular
                 </label>
                 <input
-                  className="form-control js-name"
+                  onChange = {actualizarUsu} 
                   type="text"
+                  className="form-control js-name"
+                  id="celular"
+                  name="celular"
+                  placeholder = {celular}
                 />
               </div>
               <div className="col-sm-12">
@@ -76,12 +138,6 @@ const Table = () => {
                   defaultValue="Guardar Información">
                   Guardar
                 </button>
-                <button
-                  type="submit"
-                  className="btn btn-dark"
-                  defaultValue="Guardar Información">
-                  Cancelar
-                </button>
               </div>
             </form>
           </div>
@@ -91,4 +147,4 @@ const Table = () => {
   );
 };
 
-export default Table;
+export default EditarUsuario;

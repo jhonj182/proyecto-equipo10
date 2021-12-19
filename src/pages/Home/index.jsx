@@ -1,13 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { Redirect, useLocation } from "react-router-dom";
+import React, { useState, Fragment } from 'react';
 import clienteAxios from '../../config/axios';
-import Cookies from 'universal-cookie';
-import md5 from 'md5'; 
+import md5 from 'md5';
 
 
 const Index = (props) => {
-  const cookies = new Cookies(); 
-  const location = useLocation();
   const [users, saveUser] = useState({
     usuario: '',
     password: ''
@@ -24,22 +20,15 @@ const Index = (props) => {
     const consultarUsuario = (event)=>{
       event.preventDefault();
       var pass = md5(users.password);
-      clienteAxios.get('/users', { params: {usuario: users.usuario, password: pass}})
+      clienteAxios.get('/usuarios', { params: {usuario: users.usuario, password: pass}})
       .then(response => {
         console.log(response)
         console.log(response.data.length)
         if(response.data.length > 0){
           const respuesta=response.data[0];
           localStorage.setItem('user', JSON.stringify(respuesta));
-          cookies.set('id', respuesta.id, {path: "/"});
-          cookies.set('nombre', respuesta.nombres, {path: "/"});
-          cookies.set('usuario', respuesta.usuario, {path: "/"});
-          cookies.set('apellidos', respuesta.apellidos, {path: "/"});
-          cookies.set('rol', respuesta.rol, {path: "/"});
-          cookies.set('avatar', respuesta.avatar, {path: "/"});
-          alert(`Bienvenido ${respuesta.nombres} ${respuesta.apellidos}`);
+          alert(`Bienvenido ${respuesta.nombre} ${respuesta.apellidos}`);
           window.location = '/profile';
-          // <Redirect to={{ pathname: "/" , state: { from: location }}} />
         }
 
       })
@@ -47,16 +36,16 @@ const Index = (props) => {
         console.log(error);
       })
     }
-
+    console.log('desde index home');
 
   return (
-    <>
+    <Fragment>
       <div>
         <header className="bg-light sticky-top">
           <nav className="navbar w-70 ali navbar-expand-lg navbar-light ">
             <div className="container-fluid col-log-6 justify-content-start">
               <div className="nav">
-                <img className="logo" width={241} height={183} src="img/logo.svg" />
+                {/* <img className="logo" width={241} height={183} src="img/logo.svg" /> */}
               </div>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon" />
@@ -111,7 +100,7 @@ const Index = (props) => {
         </section>
       </div>
 
-    </>
+    </Fragment>
   );
 }
 

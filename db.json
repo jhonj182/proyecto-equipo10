@@ -463,25 +463,32 @@
       "idUsuario": 5
     },
     {
-      "id": 1245,
-      "marca": "tamayito",
-      "modelo": 0,
-      "placa": "WXC125",
-      "idUsuario": 1
-    },
-    {
-      "id": 1246,
-      "marca": "morita",
+      "id": 51,
+      "marca": "porsche",
       "modelo": 0,
       "placa": "",
       "idUsuario": 1
     },
     {
-      "id": 1247,
-      "marca": "morita",
+      "id": 52,
+      "marca": "montero",
       "modelo": 0,
-      "placa": "",
+      "placa": "acf654",
       "idUsuario": 1
+    },
+    {
+      "id": 53,
+      "marca": "daniel",
+      "modelo": 0,
+      "placa": "yut678",
+      "idUsuario": 1
+    },
+    {
+      "id": 54,
+      "marca": "LA QUE SEA",
+      "modelo": 0,
+      "placa": "ASDFGH",
+      "idUsuario": 4
     }
   ],
   "transacciones": [

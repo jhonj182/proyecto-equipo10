@@ -1,14 +1,7 @@
 import { Route, Redirect, useLocation } from "react-router-dom";
 import Head from '../components/Header.jsx';
-import Cookies from 'universal-cookie';
-// const user = {id: 1, username: "luis50"}
 
 export default function PrivateRoute({ component: Component, ...rest }) {
-  const cookies = new Cookies(); 
-  // let user = localStorage.getItem['user'];
-  // user = JSON.parse(user);
-  // console.log(user)
-  // const user = true;
   const location = useLocation();
   const productoJson = localStorage.getItem('user');
   let producto = (JSON.parse (productoJson));
@@ -19,8 +12,9 @@ export default function PrivateRoute({ component: Component, ...rest }) {
     <Head 
       user = {user}
     />
+    console.log('user');
     <Route {...rest}>
-      {user ? (
+      {user != null ? (
         <Component 
           user = {user}
         />

@@ -3,13 +3,12 @@ import clienteAxios from '../config/axios';
 
 const Table = ( props ) => {
   const {user} = props.user;
-  console.log(user.id)
+  console.log(user._id)
   const [vehiculo, saveVehiculo] = useState({
-    id: 0,
-    marca: '',
+    propietario_id: user._id,
     placa: '',
-    modelo: 0,
-    idUsuario: 0
+    marca: '',
+    modelo: ''
   });
   const actualizarState = event =>{
     saveVehiculo({
@@ -31,8 +30,9 @@ const Table = ( props ) => {
   
   const registrarVehiculo = (event)=>{
     event.preventDefault();
-    let idNuevo = getIdVehiculo()+1;
-    clienteAxios.post('/vehiculos', { id: idNuevo, marca: vehiculo.marca, modelo: vehiculo.modelo, placa: vehiculo.placa, idUsuario: user.id })
+    // let idNuevo = getIdVehiculo()+1;
+    alert(user._id);
+    clienteAxios.post('/vehiculos', { propietario_id: vehiculo.propietario_id, marca: vehiculo.marca, modelo: vehiculo.modelo, placa: vehiculo.placa })
     .then(response => {
       console.log(response)
       alert("vehiculo registrado con éxito ");
@@ -65,7 +65,7 @@ const Table = ( props ) => {
                   type="text"
                   className="form-control js-name"
                   id="name"
-                  name="name"
+                  name="placa"
                   placeholder="AAA000"
                   style={{ textTransform: "uppercase" }}
                   onKeyUp = {actualizarState}

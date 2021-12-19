@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import Fill from '../../components/Charge-account'
+import Fill from '../../components/ChargeAccount'
 
 const Index = () => {
   return (

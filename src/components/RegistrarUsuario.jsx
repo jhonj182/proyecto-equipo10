@@ -1,6 +1,38 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState, useEffect } from "react";
+import clienteAxios from '../config/axios';
 
 const Table = () => {
+  const [usuario, saveUsuario] = useState({
+    nombre: '',
+    apellidos: '',
+    email: '',
+    documento: '',
+    telefono: '',
+    password: '',
+    tipo: '',
+
+  });
+  const actualizarState = event =>{
+    saveUsuario({
+      ...usuario,
+      [event.target.name]: event.target.value 
+    })
+    console.log(usuario);
+  }
+  const registrarUsuario = (event)=>{
+    event.preventDefault();
+    clienteAxios.post('/usuarios', { nombre: usuario.nombre, apellidos: usuario.apellidos, email: usuario.email, documento: usuario.documento, telefono: usuario.telefono, password: usuario.password, tipo:usuario.tipo })
+    .then(response => {
+      console.log(response)
+      alert(response);
+      localStorage.setItem('user', JSON.stringify(usuario));
+      window.location = '/charge-account';
+    })
+    .catch(error =>{
+      console.log(error);
+      alert("error usuario no registrado con éxito ");
+    })
+  }
   return (
     <Fragment>
       <section className="container-fluid contenedor ">
@@ -11,17 +43,31 @@ const Table = () => {
             >
               Registro de Usuario
             </h1>
-            <form className="row g-3 text-light">
+            <form className="row g-3 text-light" onSubmit={registrarUsuario}>
               <div className="col-sm-12">
                 <label htmlFor="name" className="form-label">
-                  Nombres y Apellidos
+                  Nombres
                 </label>
                 <input
                   type="text"
                   className="form-control js-name"
                   id="name"
-                  name="name"
+                  name="nombre"
                   style={{ textTransform: "uppercase" }}
+                  onKeyUp = {actualizarState}
+                />
+              </div>
+              <div className="col-sm-12">
+                <label htmlFor="apellido" className="form-label">
+                  Apellidos
+                </label>
+                <input
+                  type="text"
+                  className="form-control js-name"
+                  id="name"
+                  name="apellidos"
+                  style={{ textTransform: "uppercase" }}
+                  onKeyUp = {actualizarState}
                 />
               </div>
               <div className="col-sm-12">
@@ -32,8 +78,9 @@ const Table = () => {
                   type="text"
                   className="form-control js-name"
                   id="name"
-                  name="name"
+                  name="documento"
                   style={{ textTransform: "uppercase" }}
+                  onKeyUp = {actualizarState}
                 />
               </div>
               <div className="col-sm-12">
@@ -44,8 +91,9 @@ const Table = () => {
                   type="text"
                   className="form-control js-name"
                   id="name"
-                  name="name"
+                  name="email"
                   style={{ textTransform: "uppercase" }}
+                  onKeyUp = {actualizarState}
                 />
               </div>
               <div className="col-sm-12">
@@ -55,6 +103,8 @@ const Table = () => {
                 <input
                   className="form-control js-name"
                   type="text"
+                  name="telefono"
+                  onKeyUp = {actualizarState}
                 />
               </div>
               <div className="col-sm-12">
@@ -64,6 +114,8 @@ const Table = () => {
                 <input
                   className="form-control js-name"
                   type="password"
+                  name ="password"
+                  onKeyUp = {actualizarState}
                 />
               </div>
               <div className="col-sm-12">
@@ -94,7 +146,8 @@ const Table = () => {
                 <input
                   type="submit"
                   className="btn btn-dark"
-                  defaultValue="Registrar Vehículo"
+                  Value="Enviar"
+                  
                 />
               </div>
             </form>
