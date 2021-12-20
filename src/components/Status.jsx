@@ -2,6 +2,9 @@ import React from 'react';
 import StatusCard from './StatusCard'
 
 const Status = () => {
+  const productoJson = localStorage.getItem('user');
+  let usuarioLocal = (JSON.parse (productoJson));
+  const { saldo, puntos } = usuarioLocal;
   return (
     <section className="container-fluid contenedor pt-3 px-5">
       <div className="row">
@@ -16,11 +19,11 @@ const Status = () => {
         />
         <StatusCard
           Titulo = {'Puntos Acumulados'}
-          Valor = {50000}
+          Valor = {puntos}
         />
         <StatusCard
           Titulo = {'Saldo'}
-          Valor = {50000}
+          Valor = {`$${saldo}`}
         />
 
       </div>

@@ -12,7 +12,6 @@ export default function PrivateRoute({ component: Component, ...rest }) {
     <Head 
       user = {user}
     />
-    console.log('user');
     <Route {...rest}>
       {user != null ? (
         <Component 

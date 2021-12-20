@@ -19,13 +19,13 @@ const Index = (props) => {
 
     const consultarUsuario = (event)=>{
       event.preventDefault();
-      var pass = md5(users.password);
-      clienteAxios.get('/usuarios', { params: {usuario: users.usuario, password: pass}})
+      var pass = (users.password);
+      clienteAxios.post('/login', { params: {email: users.usuario, password: pass}})
       .then(response => {
         console.log(response)
-        console.log(response.data.length)
-        if(response.data.length > 0){
-          const respuesta=response.data[0];
+        console.log(response.data)
+        if(response.data){
+          const respuesta=response.data;
           localStorage.setItem('user', JSON.stringify(respuesta));
           alert(`Bienvenido ${respuesta.nombre} ${respuesta.apellidos}`);
           window.location = '/profile';
