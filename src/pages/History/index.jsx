@@ -1,8 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { getVehiculo } from "../../config/db";
+import clienteAxios from '../../config/axios'
 
-const Index = ({transacciones}) => {
+const Index = () => {
+  const productoJson = localStorage.getItem('user');
+  let usuarioLocal = (JSON.parse (productoJson));
+  const { _id } = usuarioLocal;
 
+  const [transacciones, guardarVehiculos] = useState('');
+  console.log(`idusuario ${_id}`);
+  useEffect(()=>{
+    const consultarAPI = () =>{
+    // event.preventDefault();`
+      clienteAxios.get(`/transacciones-usuarios/${_id}`)
+      .then(response => {
+        //colocar el resultado de la consulta en el state
+        guardarVehiculos(response.data);
+        console.log(`transacciones: ${transacciones}`)
+      })
+      .catch(error =>{
+        console.log(error);
+      })
+    }
+    consultarAPI();
+
+  }, [_id] );
   return (
     <div>
   <section className="container-fluid contenedor px-5">
@@ -24,14 +46,12 @@ const Index = ({transacciones}) => {
               <tbody>
               {console.log(transacciones)}
               {!transacciones ?  '' : transacciones.map( (transaccion, index)=> {
-                    let placas = (getVehiculo(transaccion.vehiculoId))[0].placa;
-                    console.log(placas)
                     return (
                       <tr key={index}>
-                        <th className="px-2" scope="row">{transaccion.fecha}</th>
+                        <th className="px-2" scope="row">{transaccion.createdAt}</th>
                         <td className="px-2">{transaccion.monto}</td>
-                        <td className="px-2">{placas}</td>
-                        <td className="px-2">{transaccion.puntosObtenidos}</td>
+                        <td className="px-2">{transaccion.vehiculo}</td>
+                        <td className="px-2">{transaccion.puntos_obt}</td>
                         <td className="px-2">{transaccion.puntosRedimidos}</td>
                         <td className="px-2">{transaccion.tipo}</td>
                       </tr>

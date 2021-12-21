@@ -1,7 +1,5 @@
 import React, { useState, Fragment } from 'react';
 import clienteAxios from '../../config/axios';
-import md5 from 'md5';
-
 
 const Index = (props) => {
   const [users, saveUser] = useState({
@@ -23,12 +21,11 @@ const Index = (props) => {
       clienteAxios.post('/login', { params: {email: users.usuario, password: pass}})
       .then(response => {
         console.log(response)
-        console.log(response.data)
         if(response.data){
           const respuesta=response.data;
           localStorage.setItem('user', JSON.stringify(respuesta));
           alert(`Bienvenido ${respuesta.nombre} ${respuesta.apellidos}`);
-          window.location = '/profile';
+          window.location = '/car-list/';
         }
 
       })
@@ -36,7 +33,6 @@ const Index = (props) => {
         console.log(error);
       })
     }
-    console.log('desde index home');
 
   return (
     <Fragment>

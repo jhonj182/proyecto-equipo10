@@ -9,6 +9,8 @@ const Table = () => {
     documento: '',
     telefono: '',
     password: '',
+    saldo: 0,
+    puntos: 0,
     tipo: '',
 
   });
@@ -21,7 +23,8 @@ const Table = () => {
   }
   const registrarUsuario = (event)=>{
     event.preventDefault();
-    clienteAxios.post('/usuarios', { nombre: usuario.nombre, apellidos: usuario.apellidos, email: usuario.email, documento: usuario.documento, telefono: usuario.telefono, password: usuario.password, tipo:usuario.tipo })
+    // clienteAxios.post('/usuarios', { nombre: usuario.nombre, apellidos: usuario.apellidos, email: usuario.email, documento: usuario.documento, telefono: usuario.telefono, password: usuario.password, tipo:usuario.tipo, saldo:usuario.saldo })
+    clienteAxios.post('/usuarios',  usuario )
     .then(response => {
       console.log(response)
       alert(response);

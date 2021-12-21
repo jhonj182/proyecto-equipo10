@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { FormatNumber } from '../config/functions'
 
 const StatusCard = ( {Titulo, Valor}) => {
   return (
@@ -11,7 +12,7 @@ const StatusCard = ( {Titulo, Valor}) => {
                 {Titulo}
               </div>
               <div className="h5 mb-0 font-weight-bold text-gray-800">
-                {Valor}
+                {Titulo !== "Puntos Acumulados" ? <FormatNumber number={Valor} /> : Valor}
               </div>
             </div>
             <div className="col-auto">

@@ -43,7 +43,7 @@ const Table = (props) => {
                         <td className="text-center">
                         <Link
                           className="btn btn-success  mx-2 btm-h"
-                          to={`reload-car/${vehiculo._id}`}
+                          to={`/reload-car/${vehiculo._id}`}
                         >
                           Tanquear
                         </Link>

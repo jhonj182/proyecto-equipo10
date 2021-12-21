@@ -3,7 +3,8 @@ import Status from './Status'
 import { NavLink} from 'react-router-dom'
 
 const Head = (props) => {
-  const {user} = props;
+
+  
   // const {avatar} = user;
   const salir = ()=>{
     localStorage.removeItem('user');
@@ -15,7 +16,7 @@ const Head = (props) => {
         <nav className="navbar ali navbar-expand-lg navbar-light ">
           <div className="container-fluid col-log-6 justify-content-start">
             <div className="nav">
-              <img className="logo" alt="logo" width="241" height="183"  />
+              <img className="logo" alt="logo" width="241" height="183" src="https://1000marcas.net/wp-content/uploads/2021/05/Esso-logo.png" />
             </div>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
@@ -33,9 +34,9 @@ const Head = (props) => {
                   aria-current="page">Ver Vehiculos</NavLink>
                 </li>
                 <li className="nav-item mx-2 my-2">
-                <NavLink className="nav-link px-3 btn btn-primary text-white "
+                {/* <NavLink className="nav-link px-3 btn btn-primary text-white "
                   exact to="/edit-profile/"
-                  aria-current="page">Editar mi Perfil</NavLink>
+                  aria-current="page">Editar mi Perfil</NavLink> */}
                 </li>
                 <li className="nav-item mx-2 my-2">
                 <NavLink className="nav-link px-3 btn btn-primary text-white "
